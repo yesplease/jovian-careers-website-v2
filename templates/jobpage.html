@@ -2,13 +2,14 @@
 <html>
   <head>
     {% include 'bootstrap.html' %}
-    {% include 'banner.html' %}
     <title> {{job.title}} - Bradley Careeres </title>
   </head>
 
 
   
   <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Bradley Careers</h1>
       <h3 class='mb-2'>{{job.title}}</h3>
@@ -28,8 +29,8 @@
       </ol>
       <h3>Salary</h3>
       <p>{{job.currentcy}}{{job.salary}}</p>
+      {% include 'application_form.html' %}
     </div>
-    {% include 'nav.html' %}
     {% include 'footer.html' %}
   </body>
 </html>
