@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BBH Careers - Captcha Error</title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'nav.html' %}
+  <img class="img-fluid" id="banner" src="https://images.unsplash.com/photo-1552508744-1696d4464960?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2970&q=80" >
+  
+  <style>
+    #banner {
+      height: 360px;
+      width: 100%;
+      object-fit:cover;
+      margin-bottom: 16px;
+    }
+  </style>
+  
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Oops</h1>
+      <div class="row" style="margin-bottom:32px">
+        <div class="col-md-6">
+          <p class="lead"> Please try the Captcha again to apply to {{job.title}}</p>
+        </div>
+      </div>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>
